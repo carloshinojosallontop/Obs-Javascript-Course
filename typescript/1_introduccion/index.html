@@ -15,7 +15,7 @@
 <body>
     <div class="container">
         <div class="section">
-            <a class="back-button" href="/typescript/typescript.html">
+            <a class="back-button" href="../typescript.html">
                 < Back</a> <h1>Introducción</h1>
                     <p class="caption">Introducción a TypeScript</p>
                     <hr class="separator">
@@ -53,7 +53,7 @@ console.<span class="hljs-built_in">log</span>(person.profession);
 </code></pre>
 <p>Al ser JavaScript un lenguaje interpretado, todo el código será ejecutado en su entorno (si es web será en el motor del navegador), y estos errores <strong>no aparecerán hasta el tiempo de ejecución</strong>. Eso supone que muchos errores no aparecerán hasta que sean recogidos por tests, por pruebas reales en navegador o incluso peor, <strong>EN PRODUCCIÓN</strong>.</p>
 <p>La razón de que TypeScript detecte estos problemas es porque tiene un compilador previo, que transforma el código de TypeScript a JavaScript. Podemos hacer esto mismo simplemente llamando al compilador con <code>tsc file.js</code>.</p>
-<p><img class="container-image" src="/meta/0_16_TypeScript_Console.png" alt="TypeScript"></p>
+<p><img class="container-image" src="../../meta/0_16_TypeScript_Console.png" alt="TypeScript"></p>
 <blockquote>
 <p><a href="https://www.typescriptlang.org/play?#code/PTAEHUFMBsGMHsC2lQBd5oBYoCoE8AHSAZVgCcBLA1UABWgEM8BzM+AVwDsATAGiwoBnUENANQAd0gAjQRVSQAUCEmYKsTKGYUAbpGF4OY0BoadYKdJMoL+gzAzIoz3UNEiPOofEVKVqAHSKymAAmkYI7NCuqGqcANag8ABmIjQUXrFOKBJMggBcISGgoAC0oACCoASMFmgY7p7ehCTkVOle4jUMdRLYTqCc8LEZzCZmoNJODPHFZZXVtZYYkAAeRJTInDQS8po+rf40gnjbDKv8LqD2jpbYoACqAEoAMsK7sUmxkGSCc+VVQQuaTwVb1UBrDYULY7PagbgUZLJH6QbYmJAECjuMigZEMVDsJzCFLNXxtajBdw0AiUbYANUcoAAvKAABQETBkBiCSD5a6oWnMACUzIAfKAAN6KEolBCcQTwdwBaDwZjszncyBCgDcigAvsEaRlUAyyKyAEQACRgKog8DI0XNOuCKhwDQ8ZC8iHtzhB7Bo3zcZmY7AYzEg-Fg0HUiQYIL0Ii85oAoqsGIgavpzUkcebwA5UAByYQAOUgEnNQRUAHlvmRdjz+OHjqhHApXNI8KAnN6dKMsPoUAhEDDhFdAxJ7dERAYODjuiw2FxuEESkA">Consola TypeScript Online</a></p>
 </blockquote>
@@ -114,7 +114,7 @@ studentName = <span class="hljs-number">23</span>; <span class="hljs-comment">//
 <p>Esto permite por ejemplo tener un modelo bien definido para <strong>comunicación rest</strong>, añadir tipos a objetos o argumentos de funciones para tener un correcto control o incluso tener control sobre el parsing JSON de las respuestas a peticiones web.</p>
 <h3 id="autocompletado">Autocompletado</h3>
 <p>En algunos IDEs como Visusal Studio Code, si descargamos la extensión de TypeScript (o en las versiones más modernas ya viene por defecto), podremos de disfrutar de algunas ventajas muy potentes, como por ejemplo el <strong>autocompletado de objetos o variables</strong> (gracias a la comprobación estática), el <strong>poder auto-importar de otros ficheros automáticamente</strong> o el poder visualizar el tsdoc de un objeto o método comentado.</p>
-<p><img class="container-image" src="/meta/0_17_typescript_autocomplete.png" alt="TypeScript Autocomplete"></p>
+<p><img class="container-image" src="../../meta/0_17_typescript_autocomplete.png" alt="TypeScript Autocomplete"></p>
 <h3 id="flexibilidad-en-la-comprobaci-n-de-tipos">Flexibilidad en la comprobación de tipos</h3>
 <p>Hay momentos en los que, bien por compatibilidad con otras librerías, bien por la complejidad de los tipos o por alguna otra razón, se quiere obviar los tipos o directamente escribir el código en JavaScript. Esto es posible de distintas maneras.</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">let</span> studentName: <span class="hljs-built_in">any</span> = <span class="hljs-string">"Pepe"</span>; <span class="hljs-comment">// Be careful, use with precaution</span>
